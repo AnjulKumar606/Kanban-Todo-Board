@@ -1,0 +1,14 @@
+.dashboard{
+   background-color: whitesmoke;
+      width: 100%;
+      min-height: 100vh;
+      height: auto;
+      overflow-x: auto;
+      display: flex;
+      position: relative;
+      left: 3rem;
+}
+
+.dashboard>div{
+   padding: 0 0.5rem;
+}

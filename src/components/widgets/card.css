@@ -1,0 +1,128 @@
+.fade-in-translate-rotate {
+    opacity: 0;
+    transform: translateY(-20px) rotateX(-45deg);
+    animation: fadeInTranslateRotate 150ms ease-in-out forwards;
+}
+
+@keyframes fadeInTranslateRotate {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) rotateX(-45deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+
+.fade-in-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 200ms ease-in-out forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    height: auto;
+    width: 20rem;
+
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 8px 8px;
+    padding: 16px;
+    margin: 8px;
+    box-shadow: 0px 0px 4px #C9C9C9;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 1.5rem;
+}
+
+.cardUser {
+    color: #5b5959;
+}
+
+.activeIcon {
+    margin: 0;
+    position: relative;
+    top: 2px;
+    left: 1.8rem;
+    border: 0px solid white;
+    border-radius: 50%;
+    background-color: white;
+    font-size: small !important; 
+}
+
+.cardBody {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+}
+
+.cardBodyIcon {
+    font-size: 5px;
+
+    padding: 0 0.5rem 0 0;
+    margin: 8px;
+
+}
+
+.cardFooter {
+    display: flex;
+}
+
+.cardFooter>div {
+    padding: 0.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 4px 4px;
+    box-shadow: 0px 0px 1px rgba(105, 102, 102, 0.455)
+}
+
+.cardFooterIcon {
+    font-size: 5px;
+
+    padding: 0 0.5rem 0 0;
+    margin: 8px;
+}
+
+.cardFooterTitle {
+    background-color: #999999;
+    margin: 8px;
+}
+
