@@ -148,12 +148,11 @@
 }
 
 .subDropDownList>div {
-    margin: 0.4rem;
+    padding: 0.4rem;
     display: flex;
     width: 100px;
     flex: auto;
     font-weight: 500;
-
 }
 
 
