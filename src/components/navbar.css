@@ -129,7 +129,7 @@
 
 .subDropDownList {
     width: 7rem;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     justify-content: space-between;
 
     align-items: flex-start;
@@ -150,7 +150,7 @@
 .subDropDownList>div {
     padding: 0.4rem;
     display: flex;
-    width: 100px;
+    width: 115px;
     flex: auto;
     font-weight: 500;
 }
