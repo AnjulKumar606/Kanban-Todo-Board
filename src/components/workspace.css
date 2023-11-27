@@ -1,14 +1,18 @@
-.dashboard{
+.dashboard {
    background-color: whitesmoke;
-      width: 100%;
-      min-height: 100vh;
-      height: auto;
-      overflow-x: auto;
-      display: flex;
-      position: relative;
-      left: 3rem;
+   height: calc(100vh - 5.5rem );
+
+   display: flex;
+   flex-direction: row;
+   padding: 0 2rem;
+
+   margin-bottom: 8px;
+   overflow-x: auto;
+   overflow-y: auto;
+   -webkit-user-select: none;
+   user-select: none;
 }
 
-.dashboard>div{
+.dashboard>div {
    padding: 0 0.5rem;
 }

@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     fetchUserData();
-  }, []); 
+  }, []);
 
   //fetching data from API
   const fetchUserData = () => {
@@ -48,8 +48,8 @@ function App() {
     <>
       <AppContext.Provider value={{ group, setGroup, order, setOrder, users, tickets }}>
 
-        <Navbar />
-        <Workspace />
+          <Navbar />
+          <Workspace />
 
       </AppContext.Provider>
 
