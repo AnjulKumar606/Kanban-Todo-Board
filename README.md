@@ -45,8 +45,5 @@ https://kanban-todo-board.onrender.com/
 
 ## Author
 
-<<<<<<< HEAD
 [Anjul Kumar]
-=======
-[Anjul Kumar]
->>>>>>> 93a2b00eb3f447cbfe855cc228bf564e01eccc15
+
