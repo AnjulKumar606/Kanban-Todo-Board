@@ -85,7 +85,7 @@
 
 .cardBody {
     display: flex;
-    height: 2.5rem;
+    height: calc(2.5rem - 2px);
     width: 22rem;
     overflow: hidden;
     font-weight: 500;
