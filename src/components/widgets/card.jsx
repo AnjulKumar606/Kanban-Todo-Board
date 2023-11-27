@@ -45,7 +45,7 @@ export default function Card({ id, userId, headerIcon, bodyIcon, title, footerIc
 	const initProps = () => {
 		if (!id) id = 'Default Id';
 
-		if (!footerIcon && footerIcon !==0) footerIcon = -1;
+		if (!footerIcon && footerIcon !== 0) footerIcon = -1;
 		if (!bodyIcon) bodyIcon = null;
 
 		if (!title) title = 'Default Title';
@@ -96,10 +96,15 @@ export default function Card({ id, userId, headerIcon, bodyIcon, title, footerIc
 					:
 					<></>
 				}
-				<div className='cardFooterTitle fade-in-scale' style={{ color: '#797d83', }}>
-					<CircleIcon style={{ fontSize: 'medium', color: '#bec2c8', padding: '0 2px' }} />
-					{tag}
-				</div>
+				{tag ? tag.map((tag, index) =>
+					<div key={index} className='cardFooterTitle fade-in-scale' style={{ color: '#797d83', }}>
+						<CircleIcon style={{ fontSize: 'medium', color: '#bec2c8', padding: '0 2px' }} />
+						{tag}
+					</div>
+				)
+					:
+					<></>
+				}
 			</div>
 
 		</div>

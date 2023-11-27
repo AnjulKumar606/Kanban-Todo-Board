@@ -25,7 +25,7 @@ function List() {
             {/* group list */}
 
             <div className='listItem '>
-                <div className='title' style={{ fontWeight: '400' }}>Grouping</div>
+                <div className='title'>Grouping</div>
                 <div className='subList hilight' onClick={() => setOpenSubList((prevState) => (prevState === 1 ? 0 : 1))}>
                     {group}
                     <i className='orderDropIcon'>
@@ -36,9 +36,9 @@ function List() {
                     <div className='subDropDownList fade-in-translate-rotate'
                         style={{ top: '3.5rem', left: 'calc(11rem - 1px)', }}
                         onClick={() => setOpenSubList(0)}>
-                        <div className='hilight' onClick={() => setGroup('Status')}>Status</div>
-                        <div className='hilight' onClick={() => setGroup('User')}> User</div>
-                        <div className='hilight' onClick={() => setGroup('Priority')}> Priority</div>
+                        <div className='hilight' onClick={() => setGroup('Status')}>&nbsp;&nbsp;Status</div>
+                        <div className='hilight' onClick={() => setGroup('User')}> &nbsp;&nbsp;User</div>
+                        <div className='hilight' onClick={() => setGroup('Priority')}> &nbsp;&nbsp;Priority</div>
                     </div>
                     : <></>
                 }
@@ -47,7 +47,7 @@ function List() {
             {/* order list */}
 
             <div className='listItem'>
-                <div className='title' style={{ fontWeight: '400' }}>Ordering</div>
+                <div className='title'>Ordering</div>
                 <div className='subList hilight' onClick={() => setOpenSubList((prevState) => (prevState === 2 ? 0 : 2))}>
                     {order}
                     <i className='orderDropIcon'>
@@ -58,8 +58,8 @@ function List() {
                 {openSubList === 2 ?
                     <div className='subDropDownList fade-in-translate-rotate' onClick={() => setOpenSubList(0)}
                         style={{ left: 'calc(11rem - 1px)', top: '6.5rem' }}>
-                        <div className='hilight' onClick={() => setOrder('Priority')}>Priority</div>
-                        <div className='hilight' onClick={() => setOrder('Title')}> Title</div>
+                        <div className='hilight' onClick={() => setOrder('Priority')}>&nbsp;&nbsp;Priority</div>
+                        <div className='hilight' onClick={() => setOrder('Title')}>&nbsp;&nbsp;Title</div>
                     </div>
                     : <></>
                 }
