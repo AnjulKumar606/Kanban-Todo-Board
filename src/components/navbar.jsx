@@ -34,7 +34,7 @@ function List() {
                 </div>
                 {openSubList === 1 ?
                     <div className='subDropDownList fade-in-translate-rotate'
-                        style={{ top: '3.5rem', left: 'calc(11rem - 1px)', }}
+                        style={{ top: '3.5rem', left: 'calc(12rem - 1px)', }}
                         onClick={() => setOpenSubList(0)}>
                         <div className='hilight' onClick={() => setGroup('Status')}>&nbsp;&nbsp;Status</div>
                         <div className='hilight' onClick={() => setGroup('User')}> &nbsp;&nbsp;User</div>
@@ -57,7 +57,7 @@ function List() {
 
                 {openSubList === 2 ?
                     <div className='subDropDownList fade-in-translate-rotate' onClick={() => setOpenSubList(0)}
-                        style={{ left: 'calc(11rem - 1px)', top: '6.5rem' }}>
+                        style={{ left: 'calc(12rem - 1px)', top: '6.5rem' }}>
                         <div className='hilight' onClick={() => setOrder('Priority')}>&nbsp;&nbsp;Priority</div>
                         <div className='hilight' onClick={() => setOrder('Title')}>&nbsp;&nbsp;Title</div>
                     </div>

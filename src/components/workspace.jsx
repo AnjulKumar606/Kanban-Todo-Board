@@ -12,13 +12,11 @@ export default function Workspace() {
     const { group } = useContext(AppContext)
 
     return (
-        // <div style={{ backgroundColor: 'whitesmoke' ,width:'100vw',height: '100vh' }}>
-            <div className='dashboard' >
-                {group === 'Priority' && <ByPriority />}
-                {group === 'Status' && <ByStatus />}
-                {group === 'User' && <ByUsers />}
-            </div>
-        // </div>
+        <div className='dashboard' >
+            {group === 'Priority' && <ByPriority />}
+            {group === 'Status' && <ByStatus />}
+            {group === 'User' && <ByUsers />}
+        </div>
     );
 }
 

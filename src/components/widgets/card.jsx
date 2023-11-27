@@ -96,15 +96,19 @@ export default function Card({ id, userId, headerIcon, bodyIcon, title, footerIc
 					:
 					<></>
 				}
-				{tag ? tag.map((tag, index) =>
-					<div key={index} className='cardFooterTitle fade-in-scale' style={{ color: '#797d83', }}>
-						<CircleIcon style={{ fontSize: 'medium', color: '#bec2c8', padding: '0 2px' }} />
-						{tag}
-					</div>
-				)
-					:
-					<></>
-				}
+				<div className='cardFooterTitle'>
+					{tag ? tag.map((tag, index) => <>
+
+						<div key={index} className='cardFooterTag fade-in-scale' style={{ color: '#797d83', }}>
+							<CircleIcon style={{ fontSize: 'medium', color: '#bec2c8', padding: '0 2px' }} />
+							{tag}
+						</div>
+					</>
+					)
+						:
+						<></>
+					}
+				</div>
 			</div>
 
 		</div>
