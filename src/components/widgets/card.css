@@ -51,8 +51,8 @@
 }
 
 .card {
-    height: auto;
-    width: 20rem;
+    height: 6rem;
+    width: 23rem;
 
     background-color: #FFFFFF;
     color: #000000;
@@ -85,15 +85,18 @@
 
 .cardBody {
     display: flex;
+    height: 2.5rem;
+    width: 22rem;
+    overflow: hidden;
     font-weight: 500;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .cardBodyIcon {
     font-size: 5px;
 
     padding: 0 0.5rem 0 0;
-    margin: 8px;
+    margin: 0 8px;
 
 }
 

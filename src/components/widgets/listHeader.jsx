@@ -6,7 +6,7 @@ import './listHeader.css';
 export default function ListHeader(props) {
     return (
         <>
-            <div className='fade-in' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 'auto', width: '21.5rem', color: '#000000', margin: '10px', }}>
+            <div className='fade-in' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: 'auto', width: '25rem', color: '#000000', margin: '10px', }}>
 
                 <div style={{ display: 'flex', ustifyContent: 'space-between', width: 'auto', padding: '1rem 0', }}>
 
