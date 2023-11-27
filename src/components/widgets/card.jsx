@@ -49,7 +49,6 @@ export default function Card({ id, userId, headerIcon, bodyIcon, title, footerIc
 		if (!bodyIcon) bodyIcon = null;
 
 		if (!title) title = 'Default Title';
-		if (!tag) tag = 'Default Tag';
 		if (!available) available = false;
 	}
 
